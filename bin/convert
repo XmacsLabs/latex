@@ -1,0 +1,3 @@
+#!/usr/bin/env elvish
+
+/usr/bin/MoganResearch --headless --convert $args[0] $args[1] --quit

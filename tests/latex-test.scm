@@ -19,20 +19,27 @@
   (:use (convert latex init-latex)
         (convert latex tmtex)))
 
-(define (stm->slatex x) (texmacs->latex x '()))
+(define (mgs->slatex x) (texmacs->latex x '()))
 (define slatex->latex serialize-latex)
-(define latex->stm (compose tree->stree latex->texmacs parse-latex))
+(define latex->mgs (compose tree->stree latex->texmacs parse-latex))
 
-(define-macro (check-latex stm slatex latex)
+(define-macro (check-latex mgs slatex latex)
   `(begin
-     (check (stm->slatex ,stm) => ,slatex)
+     (check (mgs->slatex ,mgs) => ,slatex)
      (check (slatex->latex ,slatex) => ,latex)
-     (check (latex->stm ,latex) => ,stm)))
+     (check (latex->mgs ,latex) => ,mgs)))
 
 (define (test-section)
   (check-latex '(chapter* "aaa") '(chapter* "aaa") "\\chapter*{aaa}")
 )
 
+(define (test-font)
+  (check-latex
+    '(with "font-shape" "italic" "hello")
+    '(textit "hello")
+    "\\textit{hello}"))
+
 (define (latex-test)
   (test-section)
+  (test-font)
   (check-report))

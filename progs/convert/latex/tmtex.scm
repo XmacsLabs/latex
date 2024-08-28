@@ -276,7 +276,7 @@
   (("font-series" "bold") tmtextbf)
   (("font-shape" "right") tmtextup)
   (("font-shape" "slanted") tmtextsl)
-  (("font-shape" "italic") tmtextit)
+  (("font-shape" "italic") textit)
   (("font-shape" "small-caps") tmtextsc)
   (("par-columns" "2") (!begin "multicols" "2"))
   (("par-columns" "3") (!begin "multicols" "3"))
