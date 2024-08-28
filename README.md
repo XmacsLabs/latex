@@ -1,0 +1,1 @@
+# LaTeX data plugin
