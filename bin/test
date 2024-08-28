@@ -1,0 +1,6 @@
+#!/usr/bin/env elvish
+
+/usr/bin/MoganResearch --version
+
+var name = $args[0]
+/usr/bin/MoganResearch --headless -b tests/$name.scm -x "("$name")" -q
