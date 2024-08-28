@@ -33,11 +33,55 @@
   (check-latex '(chapter* "aaa") '(chapter* "aaa") "\\chapter*{aaa}")
 )
 
-(define (test-font)
+(define (test-font-series)
+  (check-latex
+    '(with "font-series" "medium" "aa")
+    '(textmd "aa")
+    "\\textmd{aa}")
+  (check-latex
+    '(with "font-series" "bold" "aa")
+    '(textbf "aa")
+    "\\textbf{aa}")
+)
+
+(define (test-font-family)
+  (check-latex
+    '(with "font-family" "rm" "aa")
+    '(textrm "aa")
+    "\\textrm{aa}")
+  (check-latex
+    '(with "font-family" "ss" "aa")
+    '(textsf "aa")
+    "\\textsf{aa}")
+  (check-latex
+    '(with "font-family" "tt" "aa")
+    '(texttt "aa")
+    "\\texttt{aa}")
+)
+
+(define (test-font-shape)
+  (check-latex
+    '(with "font-shape" "right" "hello")
+    '(textup "hello")
+    "\\textup{hello}")
+  (check-latex
+    '(with "font-shape" "slanted" "hello")
+    '(textsl "hello")
+    "\\textsl{hello}")
   (check-latex
     '(with "font-shape" "italic" "hello")
     '(textit "hello")
-    "\\textit{hello}"))
+    "\\textit{hello}")
+  (check-latex
+    '(with "font-shape" "small-caps" "hello")
+    '(textsc "hello")
+    "\\textsc{hello}")
+)
+
+(define (test-font)
+  (test-font-shape)
+  (test-font-family)
+  (test-font-series))
 
 (define (latex-test)
   (test-section)
