@@ -33,11 +33,27 @@
   (check-latex '(chapter* "aaa") '(chapter* "aaa") "\\chapter*{aaa}")
 )
 
-(define (test-font)
+(define (test-font-shape)
+  (check-latex
+    '(with "font-shape" "right" "hello")
+    '(textup "hello")
+    "\\textup{hello}")
+  (check-latex
+    '(with "font-shape" "slanted" "hello")
+    '(textsl "hello")
+    "\\textsl{hello}")
   (check-latex
     '(with "font-shape" "italic" "hello")
     '(textit "hello")
-    "\\textit{hello}"))
+    "\\textit{hello}")
+  (check-latex
+    '(with "font-shape" "small-caps" "hello")
+    '(textsc "hello")
+    "\\textsc{hello}")
+)
+
+(define (test-font)
+  (test-font-shape))
 
 (define (latex-test)
   (test-section)
