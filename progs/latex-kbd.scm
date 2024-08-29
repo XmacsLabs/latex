@@ -11,7 +11,7 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(texmacs-module (texmacs keyboard latex-kbd)
+(texmacs-module (latex-kbd)
   (:use (utils edit auto-close)
         (generic format-edit)
         (generic generic-edit)
