@@ -110,7 +110,7 @@
           (output-verbatim "\\documentclass")
           (output-verbatim tm-style-options)
           (if (== (cAr lan) "chinese")
-            (output-verbatim "[UTF8]{ctexart}")
+            (output-verbatim "[UTF8]{ctexart}\n")
             (output-verbatim "{" style* "}\n"))
           (with main-lang (cAr lan)
             (cond ((== main-lang "korean")
