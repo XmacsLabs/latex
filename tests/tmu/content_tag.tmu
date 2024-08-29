@@ -1,0 +1,48 @@
+<TMU|<tuple|1.0.3|1.2.9.1-rc2>>
+
+<style|<tuple|generic|number-europe|number-long-article|old-lengths>>
+
+<\body>
+  <strong|Strong>
+
+  <em|Emphasize>
+
+  <dfn|Definition>
+
+  <samp|Sample>
+
+  <name|Name>
+
+  <person|Person>
+
+  <cite*|Cite>
+
+  <abbr|ABBR>
+
+  <acronym|Acronym>
+
+  <verbatim|Verbatim>
+
+  <kbd|Keyboard>
+
+  <code*|Code>
+
+  <var|Variable>
+
+  <deleted|Deleted>
+
+  <fill-out|Fill out>
+
+  <marked|Marked>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|enumerate-levels|4>
+    <associate|page-even-footer|<htab|5mm><page-the-page><htab|5mm>>
+    <associate|page-even-header|>
+    <associate|page-medium|paper>
+    <associate|page-odd-footer|<htab|5mm><page-the-page><htab|5mm>>
+    <associate|page-odd-header|>
+  </collection>
+</initial>
