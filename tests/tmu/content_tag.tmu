@@ -15,8 +15,6 @@
 
   <person|Person>
 
-  <cite*|Cite>
-
   <abbr|ABBR>
 
   <acronym|Acronym>
@@ -25,15 +23,7 @@
 
   <kbd|Keyboard>
 
-  <code*|Code>
-
   <var|Variable>
-
-  <deleted|Deleted>
-
-  <fill-out|Fill out>
-
-  <marked|Marked>
 </body>
 
 <\initial>

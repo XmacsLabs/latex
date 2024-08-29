@@ -3263,7 +3263,7 @@
   (smart-ref (,tmtex-smart-ref -1))
   (choose (,tmtex-choose 2))
   (tt (,tmtex-text-tt 1))
-  ((:or strong em name samp abbr dfn kbd var acronym person)
+  ((:or strong name samp abbr dfn kbd var acronym person)
    (,tmtex-modifier 1))
   (render-line-number (,tmtex-render-line-number 2))
   (menu (,tmtex-menu -1))
