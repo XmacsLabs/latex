@@ -1,5 +1,5 @@
 # LaTeX Data plugin
-> Note: It should work fine in Mogan Research v1.2.9.x LTS, for GNU TeXmacs, it might not work fine!
+> Note: It requires Mogan Research v1.2.9.1 LTS, for GNU TeXmacs, it might not work fine!
 
 ## How to develop
 First of all, you need to learn about the `TEXMACS_HOME_PATH` (see [the TEXMACS_HOME_PATH secion of Mogan v.s. GNU TeXmacs](https://mogan.app/guide/Mogan_versus_TeXmacs.html#texmacs-home-path)):
